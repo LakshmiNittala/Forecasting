@@ -3,12 +3,12 @@ import streamlit as st
 from openai import OpenAI
 
 # Streamlit UI Setup
-st.set_page_config(page_title="DeepSeek V3 Chat", layout="wide")
+st.set_page_config(page_title="Chat", layout="wide")
 st.title("Lakshmi's Chatbot")
 
 # Define API key and model
-api_key = "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"
-model = "deepseek/deepseek-chat-v3-0324:free"
+#api_key = "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"
+#model = "deepseek/deepseek-chat-v3-0324:free"
 
 # Initialize OpenAI client
 client = OpenAI(
