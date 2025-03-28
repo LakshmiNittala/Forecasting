@@ -7,13 +7,13 @@ st.set_page_config(page_title="Chat", layout="wide")
 st.title("Lakshmi's Chatbot")
 
 # Define API key and model
-#api_key = "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"
-#model = "deepseek/deepseek-chat-v3-0324:free"
+api_key = st.secrets.api_key
+model = st.secrets.model
 
 # Initialize OpenAI client
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1"
-   # api_key=api_key,
+    base_url="https://openrouter.ai/api/v1",
+    api_key = api_key,
 )
 
 # Initialize chat history
