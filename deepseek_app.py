@@ -4,7 +4,7 @@ from openai import OpenAI
 
 # Streamlit UI Setup
 st.set_page_config(page_title="Chat", layout="wide")
-st.title("This is a Chatbot that links to the DeepSeek V3 model hosted by OpenRouter. It is an open source model and therefore FREE. Performance is similar to ChatGPT-4o. Conversations are not saved by this chatbot")
+st.title("Yamber's AP Bio study tutor and companion")
 
 # Define API key and model
 api_key = st.secrets.api_key
