@@ -4,7 +4,7 @@ from openai import OpenAI
 
 # Streamlit UI Setup
 st.set_page_config(page_title="Chat", layout="wide")
-st.title("Yamber's AP Bio study tutor and companion")
+st.title("Yamini's study companion")
 
 # Define API key and model
 api_key = st.secrets.api_key
