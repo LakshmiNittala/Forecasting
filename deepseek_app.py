@@ -29,7 +29,7 @@ with st.sidebar:
     # api_key = st.text_input("OpenRouter API Key", type="password")
     # st.markdown("[Get API Key](https://openrouter.ai/)")
     selected_model = st.selectbox(
-        "Choose Model",
+        "Choose model from the dropdown",
         options=list(MODELS.keys()),
         index=0  # Default to DeepSeek
     )
