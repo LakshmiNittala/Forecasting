@@ -12,7 +12,7 @@ MODELS = {
 
 # Streamlit UI Setup
 st.set_page_config(page_title="Chat", layout="wide")
-st.title("AI chatbot")
+# st.title("AI chatbot")
 
 # Define API key
 api_key = st.secrets.api_key
@@ -25,7 +25,7 @@ client = OpenAI(
 
 # Sidebar configuration
 with st.sidebar:
-    st.header("Configuration")
+    st.header("AI Chatbot")
     # api_key = st.text_input("OpenRouter API Key", type="password")
     # st.markdown("[Get API Key](https://openrouter.ai/)")
     selected_model = st.selectbox(
