@@ -12,11 +12,10 @@ MODELS = {
 
 # Streamlit UI Setup
 st.set_page_config(page_title="Chat", layout="wide")
-st.title("Yamini's study companion")
+st.title("AI chatbot")
 
-# Define API key and model
+# Define API key
 api_key = st.secrets.api_key
-model = st.secrets.model
 
 # Initialize OpenAI client
 client = OpenAI(
