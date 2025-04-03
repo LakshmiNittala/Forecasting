@@ -9,7 +9,6 @@ MODELS = {
     "Meta Llama 70B":"meta-llama/llama-3.3-70b-instruct:free"
 }
 
-model = "deepseek/deepseek-chat-v3-0324:free"
 
 # Streamlit UI Setup
 st.set_page_config(page_title="Chat", layout="wide")
