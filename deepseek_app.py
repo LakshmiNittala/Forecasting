@@ -5,14 +5,15 @@ from openai import OpenAI
 # Configure available models
 MODELS = {
     "DeepSeek V3 Chat": "deepseek/deepseek-chat-v3-0324:free",
-    "Google Gemini 2.5":"google/gemini-2.5-pro-exp-03-25:free",
-    "Meta Llama 70B":"meta-llama/llama-3.3-70b-instruct:free"
+    "Google Gemini Pro 2.5":"google/gemini-2.5-pro-exp-03-25:free",
+    "Meta Llama 70B":"meta-llama/llama-3.3-70b-instruct:free",
+    "Mistral Small 3.1 24B":"mistralai/mistral-small-3.1-24b-instruct:free"
 }
 
 
 # Streamlit UI Setup
-st.set_page_config(page_title="Chat", layout="wide")
-# st.title("AI chatbot")
+st.set_page_config(page_title="Multi-Model Chat", layout="wide")
+st.title("Multi-Model Chatbot")
 
 # Define API key
 api_key = st.secrets.api_key
@@ -25,9 +26,7 @@ client = OpenAI(
 
 # Sidebar configuration
 with st.sidebar:
-    st.header("AI Chatbot")
-    # api_key = st.text_input("OpenRouter API Key", type="password")
-    # st.markdown("[Get API Key](https://openrouter.ai/)")
+    st.header("Configuration")
     selected_model = st.selectbox(
         "Choose model from the dropdown",
         options=list(MODELS.keys()),
